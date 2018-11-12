@@ -21,7 +21,7 @@ a:hover {
 
 #wrap {
 	margin: 0 auto;
-	width: 75%;
+	width: 100%;
 	max-width: 850px;
 	height: 90%;
 	opacity: 0.95;
@@ -32,6 +32,7 @@ a:hover {
 	font-size: 25px;
 	padding: 10px 15px;
 	border-bottom: 1px solid black;
+	transform: translate(0, 0);
 }
 
 #header h1 {
