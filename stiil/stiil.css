@@ -1,18 +1,9 @@
 body {
 	/* background-color: #ecf0f1; <-- ilma pildita */
 	background-image: url('../meedia/taust.jpg');
-    background-repeat: no-repeat;
     background-size: 100%;
     background-attachment: fixed;
     background-position: center;
-	font-family: 'Montserrat', sans-serif;
-	color: #2c3e50;
-}
-
-iframe {
-	height: 100%;
-	width: 100%;
-	overflow: hidden;
 	font-family: 'Montserrat', sans-serif;
 	color: #2c3e50;
 }
@@ -34,18 +25,18 @@ nav {
 }
 
 nav span {
-	border-bottom: 1px solid grey;
-	background: #fff;
+	border-bottom: 1px solid black;
+	background: #3498db;
 	transition: 0.3s;
 }
 
 nav span:hover {
-	border-bottom: 1px solid black;
-	background: #fff5f9;
+	border-bottom: 1px solid white;
+	background: #2980b9;
 }
 
 #header {
-	background-color: #ecf0f1;
+	background: #3498db;
 	font-size: 25px;
 	border-bottom: 1px solid black;
 	transform: translate(0, 0);
@@ -66,7 +57,7 @@ nav span:hover {
 }
 
 #header span:hover {
-	color: #7f8c8d;
+	color: #fff;
 }
 
 #wrap {
@@ -74,21 +65,27 @@ nav span:hover {
 	width: 100%;
 	max-width: 850px;
 	height: 90%;
-	opacity: 0.95;
 }
 
 #sisu {
-	background-color: #fff;
+	background: #fff; /* vanematele brauseritele */
+	background: rgba(255, 255, 255, 0.95);
 	font-size: 15px;
 	padding: 10px 15px;
 	min-height: 250px;
 }
 
+#sisu img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
 #footer {
+	background: #ecf0f1; /* vanematele brauseritele */
+	background: rgba(236, 240, 241, 0.95);
 	border-top: 1px solid black;
 	font-size: 15px;
 	padding: 10px 15px;
-	background-color: #ecf0f1;
 	margin-bottom: 15px;
 }
 
@@ -100,6 +97,7 @@ nav span:hover {
   position: fixed;
   box-sizing: border-box;
   max-width: inherit;
+
   top: 0;
-  width: 100%;
+  width: 98%;
 }

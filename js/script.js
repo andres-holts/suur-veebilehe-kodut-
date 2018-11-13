@@ -1,3 +1,5 @@
+//==================| JavaScript |==================//
+
 window.onload = function() { // käivitatakse siis, kui lehe sisu on laetud
 	header();
 	laeLehed();
@@ -34,7 +36,7 @@ function vahetaLehte(uusLeht) {
 		uusLeht.style.display = 'block';
 	}
 	
-	window.scrollTo(0, 0);
+	$('html,body').animate({ scrollTop: 0 }, 'slow');
 }
 
 function laeLehed() {
@@ -42,6 +44,6 @@ function laeLehed() {
 	
 	for(i = 0; i < lehed.length; i++) {
 		var uusLeht = lehed[i].id;
-		lehed[i].innerHTML = '<iframe src="lehed/' + uusLeht + '.html" scrolling="yes" frameborder="0"></iframe>'; // tuleb ilmselt ümber teha
+		$('#' + uusLeht + '').load('lehed/' + uusLeht + '.html');
 	}
 }
