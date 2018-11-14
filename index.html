@@ -12,13 +12,17 @@
 			<div id="header">
 				<span onclick="vahetaLehte('avaleht');">R&uuml;hm AG <h1>lehek&uuml;lg</h1></span>
 				<nav>
+					<span onclick="vahetaLehte('sissejuhatus');">Info</span>
 					<span onclick="vahetaLehte('avaleht');">Avaleht</span>
 					<span onclick="vahetaLehte('teine');">Teine leht</span>
+				 	
 				</nav>
 			</div>
 			<div id="sisu">
+				<div id="sissejuhatus" class="leht" style="display:none">Laadimine...</div>
 				<div id="avaleht" class="leht" style="">Laadimine...</div> <!-- id peab olema sama, mis kaustas 'lehed', sisu laetakse teisest failist -->
 				<div id="teine" class="leht" style="display:none">Laadimine...</div> <!-- id peab olema sama, mis kaustas 'lehed', sisu laetakse teisest failist -->
+				
 			</div>
 			<div id="footer">
 				Sissejuhatus Erialasse R&uuml;hm AG<span class="paremal">2k18</span>
