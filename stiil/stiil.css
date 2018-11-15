@@ -19,23 +19,6 @@ a:hover {
 	color: #7f8c8d;
 }
 
-nav {
-	font-size: 14px;
-	float: right;
-	height: 100%;
-}
-
-nav span {
-	border-bottom: 1px solid black;
-	background: #3498db;
-	transition: 0.3s;
-}
-
-nav span:hover {
-	border-bottom: 1px solid white;
-	background: #2980b9;
-}
-
 #header {
 	background: #3498db;
 	font-size: 25px;
@@ -59,6 +42,26 @@ nav span:hover {
 
 #header span:hover {
 	color: #fff;
+}
+
+#header nav {
+	font-size: 14px;
+	float: right;
+	height: 100%;
+}
+
+#header nav span {
+	height: 43px;
+	line-height: 43px;
+	text-align: center;
+	border-bottom: 2px solid black;
+	background: #3498db;
+	transition: 0.3s;
+}
+
+#header nav span:hover {
+	border-bottom: 2px solid white;
+	background: #2980b9;
 }
 
 #wrap {
@@ -100,4 +103,10 @@ nav span:hover {
   max-width: inherit;
   top: 0;
   width: 100%;
+}
+
+.aktiivne {
+	color: #black !important;
+	border-bottom: 3px solid white !important;
+	height: 43px !important;
 }

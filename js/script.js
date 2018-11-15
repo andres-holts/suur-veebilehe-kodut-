@@ -33,6 +33,16 @@ function vahetaLehte(uusLeht) {
 		for(i = 0; i < lehed.length; i++) {
 			lehed[i].style.display = 'none';
 		}
+		
+		var navigatsioon = document.getElementsByClassName("aktiivne");
+		for(i = 0; i < navigatsioon.length; i++) {
+			navigatsioon[i].classList.remove("aktiivne");
+		}
+		var uusNav = document.getElementsByClassName(uusLeht.id);
+		for(i = 0; i < uusNav.length; i++) {
+			uusNav[i].classList.add("aktiivne");
+		}
+		
 		uusLeht.style.display = 'block';
 	}
 	
