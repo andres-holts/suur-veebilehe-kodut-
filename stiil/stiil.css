@@ -45,12 +45,13 @@ a:hover {
 }
 
 #header nav {
-	font-size: 14px;
+	font-size: 0;
 	float: right;
 	height: 100%;
 }
 
 #header nav span {
+	font-size: 14px;
 	height: 43px;
 	line-height: 43px;
 	text-align: center;
