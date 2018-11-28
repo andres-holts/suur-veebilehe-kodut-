@@ -94,6 +94,16 @@ a:hover {
 	margin-bottom: 15px;
 }
 
+#galerii img {
+	height: 30%; /* thumbnailid */
+	width: 32.8%; /* thumbnailid */
+}
+
+.suurPilt {
+	width: 100% !important;
+	height: auto !important;
+}
+
 .paremal {
 	float: right;
 }
@@ -110,4 +120,18 @@ a:hover {
 	color: #black !important;
 	border-bottom: 3px solid white !important;
 	height: 43px !important;
+}
+
+.laadimine {
+	border-radius: 50%;
+	border: 6px solid #bdc3c7;
+	border-top: 8px solid #3498db;
+	width: 20px;
+	height: 20px;
+	animation: spin 1s infinite;
+}
+
+@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
 }

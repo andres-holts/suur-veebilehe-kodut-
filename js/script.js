@@ -13,7 +13,7 @@ function hoiaUleval() {
 	var header = document.getElementById("header"); // headeri id
 	var uleval = header.offsetTop; // alumine äär
 	
-	if (window.pageYOffset > uleval) {
+	if(window.pageYOffset > uleval) {
 		header.classList.add("uleval");
 	} 
 	else {
@@ -24,7 +24,7 @@ function hoiaUleval() {
 function vahetaLehte(uusLeht) {
     var uusLeht = document.getElementById(uusLeht);
 	
-    if (!uusLeht) {
+    if(!uusLeht) {
         alert("Sellist lehekülge ei ole!");
         return;
     }
@@ -56,4 +56,8 @@ function laeLehed() {
 		var uusLeht = lehed[i].id;
 		$('#' + uusLeht + '').load('lehed/' + uusLeht + '.html');
 	}
+}
+
+function suurendaPilti(pilt) {
+	$(pilt).toggleClass("suurPilt");
 }
