@@ -19,6 +19,18 @@ a:hover {
 	color: #7f8c8d;
 }
 
+#logo {
+	height: 55px;
+	display: inline-block;
+	padding: 5px 15px;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#logo:hover {
+	opacity: 0.7;
+}
+
 #header {
 	background: #3498db;
 	font-size: 25px;
@@ -94,9 +106,14 @@ a:hover {
 	margin-bottom: 15px;
 }
 
-#galerii img {
+.galerii img {
 	height: 30%; /* thumbnailid */
-	width: 32.8%; /* thumbnailid */
+	width: 32.6%; /* thumbnailid */
+	padding: 5px 0;
+}
+
+.galerii img:hover {
+	cursor: pointer;
 }
 
 .suurPilt {
@@ -122,16 +139,34 @@ a:hover {
 	height: 43px !important;
 }
 
+.spoiler {
+	max-width: 100%;
+	border: 1px solid black;
+	padding: 15px 25px;
+	font-weight: bold;
+	background-color: #fff;
+	margin: 5px 0;
+}
+
+.spoiler:hover {
+	cursor: pointer;
+}
+
+.spoilerSisu {
+	padding: 0 5px;
+	margin-bottom: 20px;
+}
+
 .laadimine {
 	border-radius: 50%;
 	border: 6px solid #bdc3c7;
-	border-top: 8px solid #3498db;
+	border-top: 6px solid #3498db;
 	width: 20px;
 	height: 20px;
 	animation: spin 1s infinite;
 }
 
 @keyframes spin {
-	0% { transform: rotate(0deg); }
-	100% { transform: rotate(360deg); }
+	0% { transform: rotate(10deg); }
+	100% { transform: rotate(370deg); }
 }

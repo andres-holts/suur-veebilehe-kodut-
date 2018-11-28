@@ -60,4 +60,18 @@ function laeLehed() {
 
 function suurendaPilti(pilt) {
 	$(pilt).toggleClass("suurPilt");
+	
+	// scrollime pildi juurde
+	var top = $(pilt).position().top - 65;
+	$('html,body').animate({ scrollTop: top }, 'slow');
+}
+
+function spoiler(sisuID) {
+	var sisu = document.getElementById(sisuID);
+	if(sisu.style.display == 'none'){
+		sisu.style.display='block';
+	}
+	else{
+		sisu.style.display='none';
+	}
 }

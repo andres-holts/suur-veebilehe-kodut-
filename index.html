@@ -1,20 +1,26 @@
 <html>
 	<head>
 		<title>R&uuml;hm AG</title>
+		
+		<link rel="icon" type="image/png" href="meedia/favicon.png">
+		
 		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
 		<link href="stiil/stiil.css" rel="stylesheet" type="text/css">
 	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script type="text/javascript" src="js/script.js"></script>
+		
+		<meta charset="UTF-8"> <!-- täpitähed -->
 	</head>
 	<body>
 		<div id="wrap">
 			<div id="header">
-				<span onclick="vahetaLehte('avaleht');">R&uuml;hm AG <h1>lehek&uuml;lg</h1></span>
+				<img id="logo" src="meedia/logo.png" onclick="vahetaLehte('avaleht');" />
 				<nav>
 					<span class="aktiivne avaleht" onclick="vahetaLehte('avaleht');">Avaleht</span>
 					<span class="ilves" onclick="vahetaLehte('ilves');">Ilves</span>
-					<span class="poder" onclick="vahetaLehte('poder');">P&otilde;der</span>
+					<span class="poder" onclick="vahetaLehte('poder');">Põder</span>
+					<span class="projektiinfo" onclick="vahetaLehte('projektiinfo');">Projektist</span>
 				 	
 				</nav>
 			</div>
@@ -22,9 +28,10 @@
 				<div id="avaleht" class="leht" style=""><div class="laadimine"></div></div> <!-- id peab olema sama, mis kaustas 'lehed', sisu laetakse teisest failist - lehed/avaleht.html -->
 				<div id="ilves" class="leht" style="display:none"><div class="laadimine"></div></div> <!-- id peab olema sama, mis kaustas 'lehed', sisu laetakse teisest failist - lehed/ilves.html -->
 				<div id="poder" class="leht" style="display:none"><div class="laadimine"></div></div> <!-- id peab olema sama, mis kaustas 'lehed', sisu laetakse teisest failist - lehed/poder.html -->
+				<div id="projektiinfo" class="leht" style="display:none"><div class="laadimine"></div></div>
 			</div>
 			<div id="footer">
-				Sissejuhatus Erialasse R&uuml;hm AG<span class="paremal">2k18</span>
+				Sissejuhatus Erialasse Rühm AG<span class="paremal">2k18</span>
 			</div>
 		</div>
 	</body>
