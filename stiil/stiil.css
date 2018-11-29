@@ -107,7 +107,7 @@ a:hover {
 }
 
 .galerii img {
-	height: 30%; /* thumbnailid */
+	height: 150px; /* thumbnailid */
 	width: 32.6%; /* thumbnailid */
 	padding: 5px 0;
 }
@@ -134,7 +134,7 @@ a:hover {
 }
 
 .aktiivne {
-	color: #black !important;
+	color: black !important;
 	border-bottom: 3px solid white !important;
 	height: 43px !important;
 }
