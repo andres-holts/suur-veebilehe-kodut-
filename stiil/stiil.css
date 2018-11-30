@@ -44,6 +44,26 @@ a:hover {
 	margin: 0;
 }
 
+#dropdown {
+	font-size: 14px;
+	height: 43px;
+	line-height: 43px;
+	text-align: center;
+	border-bottom: 2px solid black;
+	background: #3498db;
+	padding: 10px 15px;
+	display: inline-block;
+	color: #000;
+	cursor: pointer;
+	transition: 0.3s;
+}
+
+#dropdown:hover {
+	color: #fff;
+	border-bottom: 2px solid white;
+	background: #2980b9;
+}
+
 #header span {
 	padding: 10px 15px;
 	display: inline-block;
