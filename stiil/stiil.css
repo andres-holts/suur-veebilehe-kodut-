@@ -20,7 +20,7 @@ a:hover {
 }
 
 #logo {
-	height: 52px;
+	height: 55px;
 	display: inline-block;
 	padding: 5px 15px;
 	cursor: pointer;
@@ -77,10 +77,30 @@ a:hover {
 	background: #2980b9;
 }
 
+#header nav .dropdownsisu {
+	display: none;
+	position: absolute;
+	margin-top: 10px;
+	background-color: #3498db;
+	max-width: 150px;
+	transition: 1s;
+}
+
+#header nav .dropdownsisu span {
+    color: black;
+    padding: 0 15px !important;
+    text-decoration: none;
+    display: block;
+}
+
+#header nav #dropdown:hover .dropdownsisu {
+	display: block;
+}
+
 #wrap {
 	margin: 10px auto;
 	width: 100%;
-	max-width: 850px;
+	max-width: 900px;
 	height: 90%;
 }
 
@@ -89,7 +109,7 @@ a:hover {
 	background: rgba(255, 255, 255, 0.95);
 	font-size: 15px;
 	padding: 10px 15px;
-	min-height: 250px;
+	min-height: 350px;
 }
 
 #sisu img {

@@ -2,14 +2,14 @@
 
 <html lang="et">
 	<head>
-		<meta charset="UTF-8"> <!-- täpitähed -->
+		<meta charset="UTF-8" /> <!-- täpitähed -->
 	
 		<title>Rühm AG</title>
 		
-		<link rel="icon" type="image/png" href="meedia/favicon.png">
+		<link rel="icon" type="image/png" href="meedia/favicon.png" />
 		
-		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
-		<link href="stiil/stiil.css" rel="stylesheet" type="text/css">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" />
+		<link href="stiil/stiil.css" rel="stylesheet" type="text/css" />
 	
 		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 		<script src="js/script.js"></script>
@@ -20,13 +20,29 @@
 				<img id="logo" src="meedia/logo.png" alt="Logo" onclick="vahetaLehte('avaleht');" />
 				<nav>
 					<span class="aktiivne avaleht" onclick="vahetaLehte('avaleht');">Avaleht</span>
-					<span class="ilves" onclick="vahetaLehte('ilves');">Ilves</span>
+					<!--##### dropdowni algus #####-->
+					<span id="dropdown">Loomad
+						<div class="dropdownsisu">
+							<span class="ilves" onclick="vahetaLehte('ilves');">Ilves</span>
+							<span class="metssiga" onclick="vahetaLehte('metssiga');">Metssiga</span>
+							<span class="poder" onclick="vahetaLehte('poder');">Põder</span>
+							<span class="hunt" onclick="vahetaLehte('hunt');">Hunt</span>
+							<span class="karu" onclick="vahetaLehte('karu');">Karu</span>
+							<span class="hirv" onclick="vahetaLehte('hirv');">Punahirv</span>
+							<span class="kits" onclick="vahetaLehte('kits');">Metskits</span>				
+						</div>
+					</span>
+					<!--##### dropdowni lõpp #####-->
+					
+					<!--##### tavalise menüü algus #####-->
+					<!--<span class="ilves" onclick="vahetaLehte('ilves');">Ilves</span>
 					<span class="metssiga" onclick="vahetaLehte('metssiga');">Metssiga</span>
 					<span class="poder" onclick="vahetaLehte('poder');">Põder</span>
 					<span class="hunt" onclick="vahetaLehte('hunt');">Hunt</span>
 					<span class="karu" onclick="vahetaLehte('karu');">Karu</span>
 					<span class="hirv" onclick="vahetaLehte('hirv');">Punahirv</span>
-					<span class="kits" onclick="vahetaLehte('kits');">Metskits</span>
+					<span class="kits" onclick="vahetaLehte('kits');">Metskits</span>-->
+					<!--##### tavalise menüü lõpp #####-->
 					<a href = "projektist.html"><span class="projektiinfo">Projektist</span></a>
 				 	
 				</nav>

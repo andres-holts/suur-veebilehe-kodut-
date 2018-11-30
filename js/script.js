@@ -3,6 +3,7 @@
 window.onload = function() { // käivitatakse siis, kui lehe sisu on laetud
 	header();
 	laeLehed();
+	laius();
 }
 
 function header() {
@@ -23,6 +24,7 @@ function hoiaUleval() {
 
 function vahetaLehte(uusLeht) {
     var uusLeht = document.getElementById(uusLeht);
+	var loomad = ['ilves', 'metssiga', 'poder', 'hunt', 'karu', 'hirv', 'kits'];
 	
     if(!uusLeht) {
         alert("Sellist lehekülge ei ole!");
@@ -34,7 +36,7 @@ function vahetaLehte(uusLeht) {
 			lehed[i].style.display = 'none';
 		}
 		
-		var navigatsioon = document.getElementsByClassName("aktiivne");
+		var navigatsioon = document.getElementsByClassName('aktiivne');
 		for(i = 0; i < navigatsioon.length; i++) {
 			navigatsioon[i].classList.remove("aktiivne");
 		}
@@ -42,6 +44,10 @@ function vahetaLehte(uusLeht) {
 		for(i = 0; i < uusNav.length; i++) {
 			uusNav[i].classList.add("aktiivne");
 		}
+		//if(loomad.includes(uusLeht.id)) {
+			//var dropdown = document.getElementById('dropdown');
+			//dropdown.classList.add("aktiivne");
+		//}
 		
 		uusLeht.style.display = 'block';
 	}
@@ -73,5 +79,12 @@ function spoiler(sisuID) {
 	}
 	else{
 		sisu.style.display='none';
+	}
+}
+
+function laius() {
+	sisuLaius = document.getElementById("wrap").offsetWidth;
+	if($(window).width() < 960) {
+		$('html,body').animate({ scrollTop: top }, 'slow');
 	}
 }
