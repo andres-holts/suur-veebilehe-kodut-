@@ -1,13 +1,14 @@
 //==================| JavaScript |==================//
 
 window.onload = function() { // käivitatakse siis, kui lehe sisu on laetud
-	header();
-	laeLehed();
+	update();
 	laius();
+	laeLehed();
 }
 
-function header() {
+function update() {
 	window.onscroll = function() {hoiaUleval()};
+	window.onresize = function() {laius()};
 }
 
 function hoiaUleval() {
@@ -22,9 +23,23 @@ function hoiaUleval() {
 	}
 }
 
+function laius() {
+	var sisuLaius = window.innerWidth;
+	var drop = document.getElementById('dropdown');
+	var tavaline = document.getElementById('suurEkraan');
+	
+	if(sisuLaius < 900) {
+		drop.style.display='inline-block';
+		tavaline.style.display='none';
+	}
+	else {
+		tavaline.style.display='inline-block';
+		drop.style.display='none';	
+	}
+}
+
 function vahetaLehte(uusLeht) {
     var uusLeht = document.getElementById(uusLeht);
-	var loomad = ['ilves', 'metssiga', 'poder', 'hunt', 'karu', 'hirv', 'kits'];
 	
     if(!uusLeht) {
         alert("Sellist lehekülge ei ole!");
@@ -40,14 +55,19 @@ function vahetaLehte(uusLeht) {
 		for(i = 0; i < navigatsioon.length; i++) {
 			navigatsioon[i].classList.remove("aktiivne");
 		}
+		
+		
+		////////////////// see ei ole kõige parem lahendus, aga see töötab
+		for(i = 0; i < navigatsioon.length; i++) {
+			navigatsioon[i].classList.remove("aktiivne");
+		}
+		/////////////////////////////////////////////////////
+		
+		
 		var uusNav = document.getElementsByClassName(uusLeht.id);
 		for(i = 0; i < uusNav.length; i++) {
 			uusNav[i].classList.add("aktiivne");
 		}
-		//if(loomad.includes(uusLeht.id)) {
-			//var dropdown = document.getElementById('dropdown');
-			//dropdown.classList.add("aktiivne");
-		//}
 		
 		uusLeht.style.display = 'block';
 	}
@@ -79,12 +99,5 @@ function spoiler(sisuID) {
 	}
 	else{
 		sisu.style.display='none';
-	}
-}
-
-function laius() {
-	sisuLaius = document.getElementById("wrap").offsetWidth;
-	if($(window).width() < 960) {
-		$('html,body').animate({ scrollTop: top }, 'slow');
 	}
 }
