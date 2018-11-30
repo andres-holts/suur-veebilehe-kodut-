@@ -12,10 +12,10 @@ function update() {
 }
 
 function hoiaUleval() {
-	var header = document.getElementById("header"); // headeri id
-	var uleval = header.offsetTop; // alumine äär
+	var header = document.getElementById("header");
+	var uleval = header.offsetTop;
 	
-	if(window.pageYOffset > uleval) {
+	if(window.pageYOffset > uleval + 10) {
 		header.classList.add("uleval");
 	} 
 	else {
